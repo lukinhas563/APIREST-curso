@@ -5,7 +5,7 @@ import loginRequired from "../middlewares/loginRequired";
 const router = new Router();
 
 // Não deveria existir
-// router.get('/', userControler.index); // Lista usuários
+router.get('/', userControler.index); // Lista usuários
 // router.get('/:id', userControler.show); // Lista usuário
 
 router.post('/', userControler.store);
