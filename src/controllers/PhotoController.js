@@ -21,7 +21,7 @@ class PhotoController {
                 const { aluno_id } = req.body;
                 const foto = await Foto.create({ originalname, filename, aluno_id });
 
-                return res.json(req.file);
+                return res.json(foto);
 
             } catch (e) {
 
