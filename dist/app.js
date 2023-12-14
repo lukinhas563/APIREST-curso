@@ -18,7 +18,8 @@ var _console = require('console');
 
 const whiteListe = [
     'https://apirest-cursojs.onrender.com',
-    'https://localhost:3002'
+    'https://localhost:3002',
+    'https://www.google.com.br'
 ];
 
 const corOptions = {
