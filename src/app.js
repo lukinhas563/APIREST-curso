@@ -18,8 +18,7 @@ import { error } from 'console';
 
 const whiteListe = [
     'https://apirest-cursojs.onrender.com',
-    'https://localhost:3002',
-    'https://www.google.com.br'
+    'https://localhost:3002'
 ];
 
 const corOptions = {
