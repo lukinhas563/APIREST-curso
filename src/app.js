@@ -16,7 +16,7 @@ import alunoRoutes from './routes/alunoRoutes';
 import photoRoutes from './routes/photoRoutes';
 import { error } from 'console';
 
-const whiteListe = [
+const whiteList = [
     'https://apirest-cursojs.onrender.com',
     'https://localhost:3002',
     'https://localhost:5173',
@@ -24,7 +24,7 @@ const whiteListe = [
 
 const corOptions = {
     origin: function (origin, callback) {
-        if (whiteListe.indexOf(origin) !== -1 || !origin) {
+        if (whiteList.indexOf(origin) !== -1 || !origin) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));

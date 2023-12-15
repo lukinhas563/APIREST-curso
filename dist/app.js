@@ -16,7 +16,7 @@ var _alunoRoutes = require('./routes/alunoRoutes'); var _alunoRoutes2 = _interop
 var _photoRoutes = require('./routes/photoRoutes'); var _photoRoutes2 = _interopRequireDefault(_photoRoutes);
 var _console = require('console');
 
-const whiteListe = [
+const whiteList = [
     'https://apirest-cursojs.onrender.com',
     'https://localhost:3002',
     'https://localhost:5173',
@@ -24,7 +24,7 @@ const whiteListe = [
 
 const corOptions = {
     origin: function (origin, callback) {
-        if (whiteListe.indexOf(origin) !== -1 || !origin) {
+        if (whiteList.indexOf(origin) !== -1 || !origin) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
